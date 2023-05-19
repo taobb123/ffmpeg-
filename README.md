@@ -1,6 +1,4 @@
-# ffmpeg-
-短视频剪辑
-常用命令
+# ffmpeg-短视频剪辑常用命令
 
 # 添加字幕
 ffmpeg -i out.mp4 -vf subtitles=out.srt output.mp4
