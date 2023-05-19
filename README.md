@@ -12,5 +12,10 @@ ffmpeg -i out.mp4 -i sxyx2008@163.com.gif -filter_complex overlay="(main_w/2)-(o
 
 -i out.mp4(视频源)
 -i sxyx2008@163.com.gif(水印图片)
-overlay 水印的位置
+overlay 水印的位
 output.mp4 输出文件
+
+
+#你可以使用 -aspect 标志设置一个视频文件的屏幕高宽比，像下面。
+
+$ ffmpeg -i input.mp4 -aspect 16:9 output.mp4
