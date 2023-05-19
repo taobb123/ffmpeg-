@@ -28,7 +28,7 @@ FFmpeg 允许你调整视频播放速度。
 $ ffmpeg -i input.mp4 -vf "setpts=0.5*PTS" output.mp4
 
 
-# 提取视频中的音频内容
+# 提取视频中的音频内容 https://bbs.huaweicloud.com/blogs/331588
 如果想要把目标视频中的某段音频截取出来，可以使用如下代码
 
 from moviepy.editor import *
