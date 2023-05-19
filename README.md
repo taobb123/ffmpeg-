@@ -17,3 +17,12 @@ output.mp4 输出文件
 # 你可以使用 -aspect 标志设置一个视频文件的屏幕高宽比，像下面。
 
 $ ffmpeg -i input.mp4 -aspect 16:9 output.mp4
+
+
+
+# 增加/减少视频播放速度
+FFmpeg 允许你调整视频播放速度。
+
+为增加视频播放速度，运行：
+
+$ ffmpeg -i input.mp4 -vf "setpts=0.5*PTS" output.mp4
