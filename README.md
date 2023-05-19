@@ -16,6 +16,6 @@ overlay 水印的位
 output.mp4 输出文件
 
 
-#你可以使用 -aspect 标志设置一个视频文件的屏幕高宽比，像下面。
+# 你可以使用 -aspect 标志设置一个视频文件的屏幕高宽比，像下面。
 
 $ ffmpeg -i input.mp4 -aspect 16:9 output.mp4
