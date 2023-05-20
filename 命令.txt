@@ -1,0 +1,15 @@
+
+ffmpeg -ss 00:00:00 -i cut1.mp4 -to 00:00:03 -c copy cut.mp4
+
+ffmpeg -f concat -i file.txt -c copy output.mp4
+
+
+ffmpeg -i video.mp4 -i audio.mp4 -c:v copy -c:a aac -strict experimental output.mp4
+
+
+ffmpeg -i cut1.mp4 -f mp3 -vn output.mp3
+
+
+
+
+             

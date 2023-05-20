@@ -1,0 +1,36 @@
+ffmpeg是一个开源的音视频处理工具，可以进行视频格式转换、剪辑、压缩、合并等操作。以下是ffmpeg工具常用的命令及用法解释：
+
+1. 转换文件格式
+
+ffmpeg -i input.mp4 output.avi </br>
+将input.mp4视频文件转换成output.avi格式。
+
+2. 截取视频
+
+ffmpeg -i input.mp4 -ss 00:01:00 -t 00:00:30 output.mp4 </br>
+将input.mp4视频文件从1分钟处开始截取30秒，并保存为output.mp4。
+
+3. 改变分辨率
+
+ffmpeg -i input.mp4 -vf scale=640:360 output.mp4 </br>
+将input.mp4视频文件的分辨率改为640x360，并保存为output.mp4。
+
+4. 压缩视频
+
+ffmpeg -i input.mp4 -b:v 2048k -b:a 128k output.mp4 </br>
+将input.mp4视频文件压缩为2048kbps的视频比特率和128kbps的音频比特率，并保存为output.mp4。
+
+5. 提取音频
+
+ffmpeg -i input.mp4 -vn -acodec copy output.mp3 </br>
+将input.mp4视频文件的音频部分提取出来，并保存为output.mp3。
+
+6. 合并视频
+
+ffmpeg -i input1.mp4 -i input2.mp4 -filtercomplex "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1" output.mp4 </br>
+将input1.mp4和input2.mp4视频文件合并成一个视频文件，并保存为output.mp4。
+
+7. 添加水印
+
+ffmpeg -i input.mp4 -i logo.png -filtercomplex "overlay=10:10" output.mp4 </br>
+将input.mp4视频文件加上logo.png图片作为水印，位置为左上角，输出为output.mp4文件。
