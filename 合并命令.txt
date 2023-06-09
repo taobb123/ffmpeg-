@@ -1,5 +1,5 @@
-### 视频与视频合并
-ffmpeg -i video.mp4 -i audio.mp4 -c:v copy -c:a aac -strict experimental output.mp4
+### 视频音频
+ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a aac -strict experimental output.mp4
 ### 视频与音频合并
 ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a aac output.mp4
 
